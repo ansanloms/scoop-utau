@@ -1,6 +1,6 @@
 {
   "homepage": "http://utau2008.web.fc2.com/index.html",
-  "description": "‰Ìº‡¬ƒc[ƒ‹utau",
+  "description": "æ­Œå£°åˆæˆãƒ„ãƒ¼ãƒ«utau",
   "version": "0.4.18e",
   "license": {
     "identifier": "shareware",
@@ -26,23 +26,23 @@
   "installer": {
     "script": [
       "Expand-MsiArchive \"$dir\\tmp\\utaustup.msi\" \"$dir\"",
-      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\MSCOMCTL.ocx\"",
-      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\COMDLG32.ocx\"",
-      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\msinet.ocx\"",
-      "Move-Item \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\*.DLL\" \"$dir\\.\""
+      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\MSCOMCTL.ocx\"",
+      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\COMDLG32.ocx\"",
+      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\msinet.ocx\"",
+      "Move-Item \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\*.DLL\" \"$dir\\.\""
     ]
   },
   "uninstaller": {
     "script": [
-      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\MSCOMCTL.ocx\"",
-      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\COMDLG32.ocx\"",
-      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\msinet.ocx\""
+      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\MSCOMCTL.ocx\"",
+      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\COMDLG32.ocx\"",
+      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\msinet.ocx\""
     ]
   },
   "shortcuts": [
     [
       "utau.exe",
-      "‰Ìº‡¬ƒc[ƒ‹utau"
+      "æ­Œå£°åˆæˆãƒ„ãƒ¼ãƒ«utau"
     ]
   ]
 }
