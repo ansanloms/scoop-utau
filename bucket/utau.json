@@ -1,6 +1,6 @@
 {
   "homepage": "http://utau2008.web.fc2.com/index.html",
-  "description": "æ­Œå£°åˆæˆãƒ„ãƒ¼ãƒ«utau",
+  "description": "‰Ìº‡¬ƒc[ƒ‹utau",
   "version": "0.4.18e",
   "license": {
     "identifier": "shareware",
@@ -18,30 +18,31 @@
     "setting.ini"
   ],
   "pre_install": [
-    "invoke-externalcommand -filepath \"$dir\\utau0418e-inst.exe\" -argumentlist \"/q /t:$dir\\tmp /c\" -runas | out-null",
+    "Invoke-ExternalCommand -filepath \"$dir\\utau0418e-inst.exe\" -argumentlist \"/q /t:$dir\\tmp /c\" -runas | out-null",
     "if (!(Test-Path \"$persist_dir\\setting.ini\")) {",
-    "    new-item \"$dir\\setting.ini\" -type file | out-null",
+    "    New-Item \"$dir\\setting.ini\" -type file | out-null",
     "}"
   ],
   "installer": {
     "script": [
-      "expand-msiarchive \"$dir\\tmp\\utaustup.msi\" \"$dir\"",
-      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\mscomctl.ocx\"",
-      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\comdlg32.ocx\"",
-      "sudo regsvr32.exe /s \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\msinet.ocx\""
+      "Expand-MsiArchive \"$dir\\tmp\\utaustup.msi\" \"$dir\"",
+      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\MSCOMCTL.ocx\"",
+      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\COMDLG32.ocx\"",
+      "sudo regsvr32.exe /s \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\msinet.ocx\"",
+      "Move-Item \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\*.DLL\" \"$dir\\.\""
     ]
   },
   "uninstaller": {
     "script": [
-      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\mscomctl.ocx\"",
-      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\comdlg32.ocx\"",
-      "sudo regsvr32.exe /s /u \"$dir\\ã‚·ã‚¹ãƒ†ãƒ  ãƒ•ã‚©ãƒ«ãƒ€\\msinet.ocx\""
+      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\MSCOMCTL.ocx\"",
+      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\COMDLG32.ocx\"",
+      "sudo regsvr32.exe /s /u \"$dir\\ƒVƒXƒeƒ€ ƒtƒHƒ‹ƒ_\\msinet.ocx\""
     ]
   },
   "shortcuts": [
     [
       "utau.exe",
-      "æ­Œå£°åˆæˆãƒ„ãƒ¼ãƒ«utau"
+      "‰Ìº‡¬ƒc[ƒ‹utau"
     ]
   ]
 }
